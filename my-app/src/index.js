@@ -1,8 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import './App.css';
+// import Todo from './components/Todo';
 import * as serviceWorker from './serviceWorker';
+
+import Todo from './components/Todo';
+
+function App() {
+	return (
+		<div className="App">
+			<Todo />
+		</div>
+	);
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
